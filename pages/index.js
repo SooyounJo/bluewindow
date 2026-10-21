@@ -92,7 +92,7 @@ export default function Home() {
         </div>
         <div className="sheet" id="sheet">
           <div className="row">
-            <input type="text" id="host" defaultValue="soo-youn1016.local" spellCheck={false} aria-label="Raspberry Pi address" />
+            <input type="text" id="host" placeholder="Pi IP, e.g. 192.168.0.23" spellCheck={false} aria-label="Raspberry Pi address" />
             <button className="chip" id="connect">Connect</button>
             <button className="chip" id="rotate">Rotate: CW 90°</button>
           </div>
