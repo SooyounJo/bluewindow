@@ -9,6 +9,19 @@ export default function Home() {
     <>
       <canvas id="bg"></canvas>
 
+      {/* ================= LED 연결 (모든 화면 공통) ================= */}
+      <div className="ledbar">
+        <button className="ledlink" id="panelBtn" aria-expanded="false">LED</button>
+        <div className="sheet" id="sheet">
+          <div className="row">
+            <input type="text" id="host" placeholder="Pi IP, e.g. 192.168.0.23" spellCheck={false} aria-label="Raspberry Pi address" />
+            <button className="chip" id="connect">Connect</button>
+            <button className="chip" id="rotate">Rotate: CW 90°</button>
+          </div>
+          <div className="status" id="status">Start the server on the Pi, enter its IP address, then connect.</div>
+        </div>
+      </div>
+
       {/* ================= 랜딩 ================= */}
       <section id="landing" className="screen on">
         <div className="hero">
@@ -88,15 +101,6 @@ export default function Home() {
       <section id="detail" className="screen">
         <div className="top dtop">
           <button className="back" data-go="library">← Library</button>
-          <button className="ledlink" id="panelBtn" aria-expanded="false">LED</button>
-        </div>
-        <div className="sheet" id="sheet">
-          <div className="row">
-            <input type="text" id="host" placeholder="Pi IP, e.g. 192.168.0.23" spellCheck={false} aria-label="Raspberry Pi address" />
-            <button className="chip" id="connect">Connect</button>
-            <button className="chip" id="rotate">Rotate: CW 90°</button>
-          </div>
-          <div className="status" id="status">Start the server on the Pi, enter its IP address, then connect.</div>
         </div>
 
         <div className="layout">
