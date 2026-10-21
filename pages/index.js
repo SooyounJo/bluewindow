@@ -66,6 +66,7 @@ export default function Home() {
             <div className="field">
               <label htmlFor="rMemory">Memory <span className="count" id="rCount">0 / {MEMORY_MAX}</span></label>
               <textarea id="rMemory" maxLength={MEMORY_MAX} rows={2} placeholder="What do you remember about this place?"></textarea>
+              <button className="restart primary" id="rGen" disabled>Generate</button>
             </div>
             <div className="field">
               <div className="knobwrap rknob">
@@ -76,7 +77,6 @@ export default function Home() {
               </div>
             </div>
             <div className="actions2">
-              <button className="restart primary" id="rMusic" disabled>Generate music</button>
               <button className="restart" id="rSave" disabled>Add to Library</button>
             </div>
             <p className="rnote bad" id="rNote" hidden></p>

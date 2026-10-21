@@ -114,6 +114,7 @@ button:focus-visible, input:focus-visible, [role=slider]:focus-visible { outline
 .dial { position: relative; width: 196px; height: 196px; touch-action: none; user-select: none; cursor: grab; border-radius: 50%; }
 .dial:active { cursor: grabbing; }
 .dial canvas { width: 100%; height: 100%; display: block; }
+#rGen { align-self: flex-start; margin-top: 4px; }
 .rknob { align-self: flex-start; }
 .rknob .dial { width: 140px; height: 140px; }
 .dlabel { display: flex; gap: 8px; align-items: baseline; font: 600 11px/1 var(--font); letter-spacing: 0.16em; color: var(--muted); text-transform: uppercase; }
